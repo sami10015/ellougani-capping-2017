@@ -1,0 +1,31 @@
+﻿http://www.thecpca.com/
+
+
+Abuser is told they need to go through a abuse program (pep - parent empowerment program) 
+
+
+* paper sign-in replacement for program
+   * attendance sheet is also used for notes about patients
+* they go into the jail to use paper sign-in
+* sometimes they need it at their facility outside of the jail
+* Different classes and system for jail
+   * Jail in 8 classes
+   * Full curriculum is 28 classes
+   * Rehab center (drugs) - all men or all women
+      * course is changed based on gender
+      * 12 classes
+   * List of classes and curriculum important for attendance input
+* classes run in a schedule and no tolerance build-in
+   * I.e. someone starts at class 14, take 14-28 and 1-13
+* Way to combine another person and let them show in another class
+   * Perhaps an add additional person system in another menu
+      * Normal roster, then additional person roster
+* A lot of the day is spent on looking up people on reports
+* Bulk of the project will be based on reporting on people
+* Reporting capability built into app showing various details, like cases per month, etc.
+   * Whole month of December spent doing reports
+* Process
+   * Referral form from judge, police, etc.
+   * Notify the person that they’ve been referred to PEP
+   * Person being referred gets an intake packet
+   * Other forms that the person has to fill out
