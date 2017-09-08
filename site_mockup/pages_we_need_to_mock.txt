@@ -5,7 +5,7 @@
   c. class attendance
   d. referral form
   e. intake packet
-  f. admin tools
+  f. admin page
     i. change cirriculum/schedule
     ii. schedule a class
     iii. enter a participant into the system
@@ -17,3 +17,4 @@
 4. 404 page
 5. generic error page
 6. logout landing page
+7. Participant Information Page
