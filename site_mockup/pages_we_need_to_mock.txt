@@ -1,0 +1,19 @@
+1. login
+2. landing page
+  a. participant search
+  b. report cards
+  c. class attendance
+  d. referral form
+  e. intake packet
+  f. admin tools
+    i. change cirriculum/schedule
+    ii. schedule a class
+    iii. enter a participant into the system
+    iv. add/update employee
+    v. add a new curriculum
+    vi. add a class subject
+    vii. add a location
+3. statistic reporting
+4. 404 page
+5. generic error page
+6. logout landing page
