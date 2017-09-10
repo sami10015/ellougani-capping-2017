@@ -34,21 +34,62 @@
                 </button>
                 <a class="navbar-brand" href="index.html">CPCA</a>
             </div>
+            <div class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#header">Home</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
         </div><!--/.container-->
     </nav><!--/nav-->
-</header><!--/header-->>
+</header><!--/header-->
+
 
 <div id="feature">
-    <div id="container">
+    <div class="container">
         <div class="row">
-            <div class="text-center">
-                <h3>You have logged out</h3>                
-                <button id="button-style" type="button" class="btn btn-info" onclick="location.href='login.html';">Log back in</button>
+            <div class="jumbotron">
+               <h1 class="display-3">Participant: John Smith</h1>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Race</th>
+                        <th>Curriculum</th>
+                        <th>Date of Birth</th>
+                        <th>Classes Completed</th>
+                        <th>Classes Missing/Not Completed</th>
+                        <th>Cell Phone #</th>
+                        <th>Home Phone #</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Sith</td>
+                        <td>How to not hurt a child</td>
+                        <td>1990-12-05</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>9738973755</td>
+                        <td>9738973755</td>
+                      </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
 </div>
 
+<div class="row">
+    <div class="text-center">             
+        <button id="button-style" type="button" class="btn btn-info">Intake Packet</button>
+        <button id="button-style" type="button" class="btn btn-info">Report Card</button>
+        <button id="button-style" type="button" class="btn btn-info">Change/Assign Curriculum</button>
+    </div>
+    </br>
+    <div class="text-center">             
+        <button id="button-style" type="button" class="btn btn-success" onclick="location.href='participant_search.html'"><span class="glyphicon glyphicon-search"></span> Search Again</button>
+    </div>
+</div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery-2.1.1.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

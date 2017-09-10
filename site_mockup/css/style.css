@@ -98,7 +98,7 @@ hr {
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
-  background-color: #0BA9F9;
+  /*background-color: #0BA9F9;*/
 }
 .btn:hover {
 	color: #fff;
@@ -187,7 +187,7 @@ hr {
   color: #fff;
 }
 
-#logout-button{
+#button-style{
   text-align: center;
   margin: 0 auto;
   font-weight: 900;
