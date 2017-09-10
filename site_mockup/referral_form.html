@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bikin - HTML Bootstrap Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/overwrite.css">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- =======================================================
+        Theme Name: Bikin
+        Theme URL: https://bootstrapmade.com/bikin-free-simple-landing-page-template/
+        Author: BootstrapMade
+        Author URL: https://bootstrapmade.com
+    ======================================================= -->
+</head>
+<body>
+<header id="header">
+    <nav class="navbar navbar-fixed-top" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">CPCA</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#header">Home</a></li>
+                    <li><a href="#">Participant Search</a></li>
+                    <li><a href="#">Summary Reporting</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div><!--/.container-->
+    </nav><!--/nav-->
+</header><!--/header-->
+
+
+<div id="feature">
+    <div class="container">
+        <form class="form-inline" action="ReferralInsertRecord.php" method="post">
+            <br>
+            <!-- About Applicant group -->
+            <h4 style="text-align:center;"> Participant Information </h4>
+            <h5 style="text-align:center;"><b> Please At Minimum Fill out your First Name, Last Name, and Date Of Birth </b></h5>
+            <br>
+
+            <label for="fName"> First Name: </label>
+            <input name="fName" maxlength="20" size="30" oninput="validateAlpha('fName');" id="fName" class="form-control" type="text">
+
+            <label for="mName"> Middle Initial: </label>
+            <input name="mName" maxlength="1" size="1" oninput="validateAlpha('mName');" id="mName" class="form-control" type="text">
+
+            <label for="LName"> Last Name: </label>
+            <input name="lName" maxlength="20" size="30" oninput="validateAlpha('lName');" id="lName" class="form-control" type="text">
+
+            <br>
+            <br>
+
+            <label for="DOB"> Date of Birth: </label>
+            <input name="DOB" maxlength="10" size="30" id="DOB" class="form-control" onkeypress="isDate('DOB',event);" onblur="isDateOffFocus('DOB');" placeholder="mm/dd/yyyy" type="text">
+
+            <br>
+            <br>
+
+            <label for="RefReason" style="width:16%;"> Reason for Referral: </label>
+            <textarea id="RefReason" name="RefReason" class="form-control" style="resize:none;width:100%;" maxlength="250"> </textarea>
+
+            <br>
+            <br>
+            <hr>
+            <!-- Address group -->
+            <h4> Participant Contact Information </h4>
+            <br>
+
+            <label for="street"> Street: </label>
+            <input name="street" maxlength="30" size="30" id="street" class="form-control" type="text">
+
+            <label for="city"> City: </label>
+            <input name="city" maxlength="30" size="30" oninput="validateAlpha('city');" id="city" class="form-control" type="text">
+
+            <br>
+            <br>
+
+            <label for="state"> State: </label>
+            <select name="state" id="state" class="form-control" style="margin-right:9%;">
+                <option value="" selected="selected">-- select one --</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+            </select>
+
+            <label for="zip"> Zip: </label>
+            <input name="zip" maxlength="5" size="5" oninput="isNumberKey('zip');" id="zip" class="form-control" type="text">
+
+            <br>
+            <br>
+
+            <label for="HPhone"> Home Phone: </label>
+            <input name="HPhone" maxlength="12" size="30" id="HPhone" class="form-control" onkeypress="isPhoneNumber('HPhone',event);" onblur="isPhoneOffFocus('HPhone');" placeholder="999-999-9999" type="text">
+
+            <label for="CPhone"> Cell Phone: </label>
+            <input name="CPhone" maxlength="12" size="30" id="CPhone" class="form-control" onkeypress="isPhoneNumber('CPhone',event);" onblur="isPhoneOffFocus('CPhone');" placeholder="999-999-9999" type="text">
+
+            <br>
+            <br>
+            <hr>
+            <!-- Referring Agency group -->
+            <h4 style="text-align:center;"> Referring Party Information </h4>
+
+            <br>
+            <br>
+
+            <label for="RefAgencyName"> Referring Party </label>
+            <select name="RefAgencyName" id="RefAgencyName" class="form-control" style="margin-right:4%; width:265px;" onchange="enableRefAgencyOtherBox();">
+                <option value="" selected="selected"> 						-- select one --					</option>
+                <option value="CPS"> 						CPS 							</option>
+                <option value="DC Sherriff">				Dutchess County Sherriff		</option>
+                <option value="Family">						Family 							</option>
+                <option value="Friend">						Friend							</option>
+                <option value="Self">						Self							</option>
+                <option value="Lawyer">						Lawyer							</option>
+                <option value="Local Police">				Local Police					</option>
+                <option value="New York State Police">		NYS Police						</option>
+                <option value="Family Court">				Family Court 					</option>
+                <option value="County Court">				County Court					</option>
+                <option value="Other Court">				Other Court						</option>
+                <option value="Other Police">				Other Police					</option>
+                <option value="other">						Other							</option>
+            </select>
+
+            <label for="RefAgencyNameOther" style="width:10%;"> If other, name here: </label>
+            <input name="RefAgencyNameOther" id="RefAgencyNameOther" class="form-control" size="30" maxlength="30" oninput="validateAlpha('RefAgencyNameOther');" disabled="disabled" type="text">
+
+            <br>
+            <br>
+
+            <label for="refDate"> Date Referred </label>
+            <input name="refDate" id="refDate" maxlength="10" size="30" class="form-control" onkeypress="isDate('refDate',event);" onblur="isDateOffFocus('refDate');" placeholder="mm/dd/yyyy" type="text">
+
+            <br>
+            <br>
+
+            <label for="refContactPersonFName" style="width:13%;"> Contact Person First Name: </label>
+            <input name="refContactPersonFName" id="refContactPersonFName" maxlength="20" size="30" class="form-control" oninput=" validateAlpha('refContactPersonFName');" type="text">
+
+            <label for="refContactPersonLName" style="width:13%;"> Contact Person Last Name: </label>
+            <input name="refContactPersonLName" id="refContactPersonLName" maxlength="20" size="30" class="form-control" oninput=" validateAlpha('refContactPersonLName');" type="text">
+
+            <br>
+            <br>
+
+            <label for="refContactPersonPhone"> Contact Phone: </label>
+            <input name="refContactPersonPhone" maxlength="12" size="30" id="refContactPersonPhone" class="form-control" onkeypress="isPhoneNumber('refContactPersonPhone',event);" onblur="isPhoneOffFocus('refContactPersonPhone');" placeholder="999-999-9999" type="text">
+
+            <label for="refContactPersonEmail"> Contact Email: </label>
+            <input name="refContactPersonEmail" maxlength="30" size="30" id="refContactPersonEmail" class="form-control" onblur="isEmailOffFocus('refContactPersonEmail');" type="text">
+
+            <br>
+            <br>
+            <hr>
+            <!-- Other Household and participant information -->
+            <h4 style="text-align:center;"> Household and Participant Information </h4>
+            <br>
+            <br>
+            <label for="HouseHoldInfoTable" style="width:32%"> Referred Individual's Family/Household Information: </label>
+
+            <table id="houseHoldTable" width="100%">
+                <tbody><tr>
+                    <th> First Name </th>
+                    <th> Last Name </th>
+                    <th> Middle Intial</th>
+                    <th> DOB </th>
+                    <th> Sex </th>
+                    <th> Race </th>
+                    <th> Relation </th>
+                    <th> Comment </th>
+                </tr>
+                <tr>
+                    <td> <input name="hFName[]" maxlength="20" size="20" oninput="validateAlpha('hFName');" id="hFName" class="form-control" style="margin:3px;" type="text"> </td>
+                    <td> <input name="hSName[]" maxlength="20" size="20" oninput="validateAlpha('hSName');" id="hSName" class="form-control" style="margin:3px;" type="text"> </td>
+                    <td> <input name="hMName[]" maxlength="1" size="1" oninput="validateAlpha('hMName');" id="fName" class="form-control" style="margin:3px;" type="text"> </td>
+                    <td> <input name="hDOB[]" maxlength="10" size="10" id="hDOB" class="form-control" onkeypress="isDate('hDOB',event);" onblur="isDateOffFocus('hDOB');" style="margin:3px;" placeholder="mm/dd/yyyy" type="text"> </td>
+                    <td>
+                        <select style="margin:3px;" name="hGender[]" id="hGender" class="form-control">
+                            <option value="" selected="selected">-- select one --</option>
+                            <option value="m"> Male </option>
+                            <option value="f">Female </option>
+                        </select>
+                    </td>
+                    <td>
+                        <select style="margin:3px;" name="hRace[]" id="hRace" class="form-control">
+                            <option value="" selected="selected">-- select one --</option>
+                            <option>Asian</option>
+                            <option>Caucasian</option>
+                            <option>Hispanaic</option>
+                            <option>Indian</option>
+                            <option>Middle Eastern</option>
+                            <option>African American</option>
+                            <option>Native American</option>
+                            <option>Alaskan Native</option>
+                            <option>Other Race</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select style="margin:3px;" name="hRelation[]" id="hRelation" class="form-control">
+                            <option value="" selected="selected">-- select one --</option>
+                            <option>Brother</option>
+                            <option>Sister</option>
+                            <option>Daughter</option>
+                            <option>Son</option>
+                            <option>Spouse</option>
+                            <option>Grand Parent</option>
+                            <option>Niece</option>
+                            <option>Nephew</option>
+                            <option>Grand Child</option>
+                            <option> Other </option>
+                        </select>
+                    </td>
+                    <td><input size="20" maxlength="75" id="hComment" name="hComment[]" class="form-control" type="text"><span class="glyphicon glyphicon-plus" onclick="houseHoldTableEvent();"></span><span class="glyphicon glyphicon-minus" onclick="removeRow(this,'houseHoldTable');"></span></td>
+                </tr>
+                </tbody></table>
+
+            <br>
+            <br>
+
+            <label for="addInfoSpecNeeds" style="width:25%;"> Additional Information and/or specific needs: </label>
+            <textarea id="addInfoSpecNeeds" name="addInfoSpecNeeds" class="form-control" style="resize:none;width:100%;" maxlength="250"> </textarea>
+
+            <br>
+            <br>
+
+            <label for="HouseHoldInfoTable" style="width:32%"> Other Agencies Involved: </label>
+            <table id="OthAgenciesWorkingWith" width="100%">
+                <tbody><tr>
+                    <th> Agency Name </th>
+                    <th> Working With </th>
+                    <th> Relationship </th>
+                </tr>
+                <tr>
+                    <td> <input name="otherAgency[]" maxlength="20" size="20" oninput="validateAlpha('otherAgency');" id="otherAgency" class="form-control" style="margin:3px;" type="text"> </td>
+                    <td> <input name="otherWorkingWith[]" maxlength="41" size="41" oninput="validateAlpha('otherWorkingWith');" id="otherWorkingWith" class="form-control" style="margin:3px;" type="text"> </td>
+                    <td>
+                        <select style="margin:3px;" name="OthRelation[]" id="OthRelation" class="form-control">
+                            <option value="" selected="selected">-- select one --</option>
+                            <option>Self </option>
+                            <option>Brother</option>
+                            <option>Sister</option>
+                            <option>Daughter</option>
+                            <option>Son</option>
+                            <option>Spouse</option>
+                            <option>Grand Parent</option>
+                            <option>Niece</option>
+                            <option>Nephew</option>
+                            <option>Grand Child</option>
+                            <option> Other </option>
+                        </select>
+                        <span class="glyphicon glyphicon-plus" onclick="OthAgenciesWorkingWithEvent();"></span><span class="glyphicon glyphicon-minus" onclick="removeRow(this,'OthAgenciesWorkingWith');"></span>
+                    </td>
+                </tr>
+                </tbody></table>
+
+            <br>
+            <br>
+            <hr>
+
+            <label for="chkBoxOptions" style="width:25%;text-align:center;"> Please Check all that apply to the referred Individual: </label>
+            <br>
+            <br>
+        </form>
+    </div>
+</div>
+
+
+<!--
+	<footer>
+		<div class="text-center">
+
+		</div>
+	</footer>
+-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-2.1.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/fliplightbox.min.js"></script>
+<script src="js/functions.js"></script>
+<script src="contactform/contactform.js"></script>
+
+</body>
+</html>

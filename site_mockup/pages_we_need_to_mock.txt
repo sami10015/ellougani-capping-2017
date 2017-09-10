@@ -15,7 +15,7 @@
     vi. add a class subject
     vii. add a location
 3. statistic reporting
-4. 404 page
+*4. 404 page
 5. generic error page
 *6. logout landing page
 7. Participant Information Page
